@@ -1,0 +1,61 @@
+
+ .cardContainer {
+ 
+
+  grid-gap: 18px;
+  display: flex;
+  flex-wrap:wrap; 
+  align-items: center;
+  justify-content: center;
+  height:auto;
+  width :auto;
+  padding: 0rem;
+  margin-bottom: 20px;
+  } 
+
+
+  #cards { 
+  margin: 5px;
+  width: 180px;
+  height: 270px;
+  font-size: smaller;
+  }
+  
+  
+  #cards img {
+  height: 270px;
+  width: 180px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  }
+
+  
+   #cards #card {
+
+    opacity: 1;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    } 
+    
+
+    #cards #card h4 h5{
+text-align: top;
+margin: 0.5px;
+text-align: center;
+
+    }
+
+
