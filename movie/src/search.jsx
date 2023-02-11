@@ -47,7 +47,7 @@ const Search = ({ value}) => {
 
 
   return ( 
-    <> 
+    <> <div className='hello'>
       <div className="cardContainer">
       {searchTerm.map((movie) => (
          <MovieCard key={movie.id}
@@ -60,7 +60,7 @@ const Search = ({ value}) => {
       )
       )}
      </div>
-
+</div>
     </> 
   );
 };

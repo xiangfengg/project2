@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
 const LoadMore = ({ initialPages, setInitialPages,PopularInitialPages,setPopularInitialPages}) => {
+  console.log(initialPages);
   console.log(PopularInitialPages);
   return (
     <div className="bg-dark">

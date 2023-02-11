@@ -52,10 +52,13 @@ MovieWebpage
         value={searchTerm}
         onChange={event => setSearchTerm(event.target.value)}/>
 
-        <Button className="btn btn-outline-success me-4" onClick={() => setSearchTerm(searchTerm)}>Search</Button>
- <Search value={searchTerm}/>
+        <btn
+         className="btn btn-outline-warning me-4" 
+         onClick={() => setSearchTerm(searchTerm)}>Search</btn>
+ 
 </form> 
-
+<h1>hello</h1>
+<Search value={searchTerm}/>
  </nav>   
    </>
 
