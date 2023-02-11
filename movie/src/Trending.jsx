@@ -46,12 +46,12 @@ return (
     {TrendingShows.map((movie) => (
        <MovieCard key={movie.id}
       movie={movie} 
-      selectedMovie={selectedMovie}
-      isOpen={isOpen}
-      onClick={() => {
-      setSelectedMovie(movie);
-      setIsOpen(!isOpen);
-      }}
+      // selectedMovie={selectedMovie}
+      // isOpen={isOpen}
+      // onClick={() => {
+      // setSelectedMovie(movie);
+      // setIsOpen(!isOpen);
+      // }}
       />  
     ))}
     

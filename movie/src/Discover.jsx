@@ -2,14 +2,20 @@ import { useState, useEffect } from 'react';
 import './cards.css';
 import MovieCard from './MovieCard';
 import LoadMore from './LoadMore';
-import { Button } from 'react-bootstrap';
+
 
 const Discover = () => {
+  //fetching APi, Error and
   const [DiscoverMovies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+
+
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [isOpen, setIsOpen]=useState(false)
+
+  //to store the Page no.
   const [initialPages, setInitialPages] = useState(1);
  
 
@@ -48,12 +54,12 @@ const Discover = () => {
       {DiscoverMovies.map((movie) => (
          <MovieCard key={movie.id}
         movie={movie} 
-        selectedMovie={selectedMovie}
-        isOpen={isOpen}
-        onClick={() => {
-        setSelectedMovie(movie);
-        setIsOpen(!isOpen);
-        }}
+        // selectedMovie={selectedMovie}
+        // isOpen={isOpen}
+        // onClick={() => {
+        // setSelectedMovie(movie);
+        // setIsOpen(!isOpen);
+        // }}
        />  
       ))}
 

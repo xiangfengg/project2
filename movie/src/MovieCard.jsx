@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
         <div id ="card">
 
           <h5>{movie.name||movie.title}</h5>
-          {/* <h6>{movie.overview }</h6> */}
+           <h6>{movie.overview }</h6> 
         </div>
       ) : (
         <img 

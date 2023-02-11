@@ -12,7 +12,7 @@ const RoutesContainer = () => {
     <Routes>
       <Route exact path="/Trending" element={<Trending />} />
       <Route exact path="/Popular" element={<Popular />} />
-      <Route exact path="/Discover" element={<Discover />}/>
+       <Route exact path="/Discover" element={<Discover />}/> 
     </Routes>
   );
 };
