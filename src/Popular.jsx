@@ -45,7 +45,8 @@ const Popular = () => {
   }
 
 
-
+//movieCard is rendered for each movie 
+//passing the prop called movie and onclick to movieconponment 
 
 console.log(PopularMovies);
 

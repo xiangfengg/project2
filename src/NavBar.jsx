@@ -7,18 +7,8 @@ import "./App.css"
 
 const NavBar = () => {
   const location = useLocation();
-  const history = useHistory();
   const[ searchTerm, setSearchTerm]=useState('')
 
-
-
-
-  const handleSearch = () => {
-    history.push({
-      pathname: '/search',
-      state: { searchTerm }
-    });
-  };
 
   return (     
           <>
@@ -64,12 +54,10 @@ MovieWebpage
 
         <btn
          className="btn btn-outline-warning me-4" 
-         onClick={handleSearch}>
-        Search
-        </btn>
+         onClick={() => setSearchTerm(searchTerm)}>Search</btn>
  
 </form> 
-
+<h1>hello</h1>
 <Search value={searchTerm}/>
  </nav>   
    </>
