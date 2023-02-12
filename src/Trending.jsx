@@ -3,6 +3,7 @@ import { useState, useEffect ,} from 'react';
 import { PopularContext } from './App';
 import './cards.css';
 import MovieCard from './MovieCard';
+import {API_KEY} from './config';
 
 
 
@@ -20,7 +21,7 @@ const Trending = () => {
 
     const fetchTrending = async () => {
       try {
-        const TrendingRes = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=9dd396610432e22dfc92a06618330872');
+        const TrendingRes = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}`);
         const TrendingData = await TrendingRes.json();
         setTrending(TrendingData.results);
         setIsLoading(false);

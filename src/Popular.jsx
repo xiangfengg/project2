@@ -4,6 +4,7 @@ import { PopularContext } from './App';
 import MovieCard from './MovieCard';
 
  import LoadMore from './LoadMore';
+import { API_KEY } from './config';
 
 
 const Popular = () => {
@@ -24,7 +25,7 @@ const Popular = () => {
 
     const fetchMovies = async () => {
       try {
-        const res = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=9dd396610432e22dfc92a06618330872&language=en-US&page=${PopularInitialPages}`);
+        const res = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US&page=${PopularInitialPages}`);
         const data = await res.json();
         setMovies(data.results);
         setIsLoading(false);
