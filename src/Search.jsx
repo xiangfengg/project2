@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './cards.css';
 import MovieCard from './MovieCard';
 import LoadMore from './LoadMore';
+import { API_KEY } from './config';
 
 
 const Search = ({ value}) => {
@@ -20,7 +21,7 @@ const Search = ({ value}) => {
 
     const fetchSearchResults = async () => {
       try {
-        const movieURL=`https://api.themoviedb.org/3/search/movie?api_key=9dd396610432e22dfc92a06618330872&language=en-US&query=${value}&page=1&include_adult=false`
+        const movieURL=`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${value}&page=1&include_adult=false`
         const res = await fetch(movieURL);
 
         const data = await res.json();
